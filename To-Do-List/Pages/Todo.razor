@@ -6,6 +6,10 @@
 
 <hr />
 
+<h5>@tasks.Count(t => !t.IsCompleted) item(s) need(s) to be completed.</h5>
+
+<hr />
+
 <div class="mt-4 mb-4">
 	<input type="text" placeholder="Enter an item" class="mr-2" @bind="newTaskItem" />
 	<button type="button" @onclick="AddBtn_Click">Add to list</button>
@@ -27,7 +31,6 @@
 			{
 			<tr>
 				<td><input type="text" @bind="task.Item" /></td>
-				<td><button type="button" class="btn-sm" @onclick="EditBtn_Click">Edit</button></td>
 				<td><input type="checkbox" @bind="task.IsCompleted" /></td>
 			</tr>
 			}
@@ -49,10 +52,5 @@
 			});
 			newTaskItem = string.Empty;
 		}
-	}
-
-	private void EditBtn_Click()
-	{
-
 	}
 }

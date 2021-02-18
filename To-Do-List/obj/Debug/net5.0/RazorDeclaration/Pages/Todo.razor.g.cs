@@ -98,7 +98,7 @@ using ToDoClasses;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "C:\Users\donte\source\repos\To-Do-List\To-Do-List\Pages\Todo.razor"
+#line 41 "C:\Users\donte\source\repos\To-Do-List\To-Do-List\Pages\Todo.razor"
        
 	private List<TodoItem> tasks { get; set; } = new List<TodoItem>();
 	private string newTaskItem;
@@ -113,11 +113,6 @@ using ToDoClasses;
 			});
 			newTaskItem = string.Empty;
 		}
-	}
-
-	private void EditBtn_Click()
-	{
-
 	}
 
 #line default
