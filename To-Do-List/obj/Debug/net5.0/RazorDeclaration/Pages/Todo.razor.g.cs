@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace To_Do_List.Shared
+namespace To_Do_List.Pages
 {
     #line hidden
     using System;
@@ -82,7 +82,15 @@ using To_Do_List.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 3 "C:\Users\donte\source\repos\To-Do-List\To-Do-List\Pages\Todo.razor"
+using ToDoClasses;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/todo")]
+    public partial class Todo : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -90,16 +98,27 @@ using To_Do_List.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "C:\Users\donte\source\repos\To-Do-List\To-Do-List\Shared\NavMenu.razor"
+#line 38 "C:\Users\donte\source\repos\To-Do-List\To-Do-List\Pages\Todo.razor"
        
-    private bool collapseNavMenu = true;
+	private List<TodoItem> tasks { get; set; } = new List<TodoItem>();
+	private string newTaskItem;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+	private void AddBtn_Click()
+	{
+		if (!string.IsNullOrEmpty(newTaskItem))
+		{
+			tasks.Add(new TodoItem
+			{
+				Item = newTaskItem
+			});
+			newTaskItem = string.Empty;
+		}
+	}
 
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
+	private void EditBtn_Click()
+	{
+
+	}
 
 #line default
 #line hidden

@@ -1,0 +1,58 @@
+﻿@page "/todo"
+
+@using ToDoClasses
+
+<h3>To Do List</h3>
+
+<hr />
+
+<div class="mt-4 mb-4">
+	<input type="text" placeholder="Enter an item" class="mr-2" @bind="newTaskItem" />
+	<button type="button" @onclick="AddBtn_Click">Add to list</button>
+</div>
+
+<hr />
+
+<div>
+	<table class="w-50">
+		<thead>
+			<tr>
+				<th scope="col">Item</th>
+				<th></th>
+				<th scope="col">Completed</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var task in tasks)
+			{
+			<tr>
+				<td><input type="text" @bind="task.Item" /></td>
+				<td><button type="button" class="btn-sm" @onclick="EditBtn_Click">Edit</button></td>
+				<td><input type="checkbox" @bind="task.IsCompleted" /></td>
+			</tr>
+			}
+		</tbody>
+	</table>
+</div>
+
+@code {
+	private List<TodoItem> tasks { get; set; } = new List<TodoItem>();
+	private string newTaskItem;
+
+	private void AddBtn_Click()
+	{
+		if (!string.IsNullOrEmpty(newTaskItem))
+		{
+			tasks.Add(new TodoItem
+			{
+				Item = newTaskItem
+			});
+			newTaskItem = string.Empty;
+		}
+	}
+
+	private void EditBtn_Click()
+	{
+
+	}
+}
