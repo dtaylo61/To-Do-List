@@ -29,10 +29,10 @@
 		<tbody>
 			@foreach (var task in tasks)
 			{
-			<tr>
-				<td><input type="text" @bind="task.Item" /></td>
-				<td><input type="checkbox" @bind="task.IsCompleted" /></td>
-			</tr>
+				<tr>
+					<td><input type="text" @bind="task.Item" /></td>
+					<td><input type="checkbox" @bind="task.IsCompleted" /></td>
+				</tr>
 			}
 		</tbody>
 	</table>

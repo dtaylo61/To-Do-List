@@ -22,7 +22,6 @@ C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\RazorDeclarat
 C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
 C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
 C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\RazorDeclaration\Pages\Todo.razor.g.cs
-C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
 C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
 C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
 C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
@@ -36,7 +35,6 @@ C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\Razor\Pages\C
 C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
 C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
 C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\Razor\Pages\Todo.razor.g.cs
-C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
 C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
 C:\Users\donte\source\repos\To-Do-List\To-Do-List\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
